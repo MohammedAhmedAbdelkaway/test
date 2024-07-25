@@ -1,11 +1,11 @@
 Description:
- This file describes the failure condition for the stm test and the content of the generated report STM summary in sb_bridge_stm.
+ This file describes the failure condition for the STM test and the content of the generated report STM summary in sb_bridge_stm.
 
 Test Fail Condition:
- The stm test (tc_stm_commit or tc_stm_boundary) fails under acheiving any of the following condition:
- 1. Number of received AXI4 Stream packets during the simulation = 0.
- 2. Number of the received Avalon Stream packets during the simulation = 0. in case there are correctly sent AXI4 stream packets.
- 3. There is uvm error. Where the uvm errors happen when:
+ The STM test (tc_stm_commit or tc_stm_boundary) fails under achieving any of the following conditions:
+ 1. Number of the received AXI4 Stream packets during the simulation = 0.
+ 2. Number of the received Avalon Stream packets during the simulation = 0, in case there are correctly sent AXI4 stream packets (at least one bridge to game packet).
+ 3. There is any uvm error. Where the uvm errors happen when:
       a. There is unacceptable residence time mismatch between RTL and Golden residence time.
       b. There is received Followup STM message on RX AXI4 Stream or Avalon without previous received sync STM message at the interface.
 
@@ -15,10 +15,10 @@ STM summary.log:
  1. Target STM test name.
  2. SIL Enable value.
  3. Repacket Enable value.
- 4. The number of sent STM pairs on AXI4 Stream & Avalon interface or the number of call for the STM sequence.
+ 4. The number of sent STM pairs on the AXI4 Stream & Avalon interface or the number of calls for the STM sequence.
  5. Number of the executed UVM Error statements during the simulation.
  6. Number of the executed UVM Info statements during the simulation.
- 7. Total Functional coverage.
+ 7. Total Functional coverage (FC).
  8. FC for the sent bridge packet type.
  9. FC for the sent bridge packet sub-type.
  10. FC for the received bridge packet type.
