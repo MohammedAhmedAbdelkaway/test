@@ -1,5 +1,5 @@
 Description:
- This file describes the failure condition for the loopback test and the content of the generated report STM summary in sb_bridge_loopback.
+ This file describes the failure condition for the loopback test and the content of the generated report Loopback summary in sb_bridge_loopback.
 
 Test Fail Condition:
  The loopback test (tc_looback_commit or tc_loopback_boundary) fails under achieving any of the following conditions:
