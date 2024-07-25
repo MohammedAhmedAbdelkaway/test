@@ -8,7 +8,7 @@ Test Fail Condition:
  3. There is any uvm error. Where the uvm errors happen when:
       a. There is incorrect received axi4 stream packet (not bridge to bridge type).
 
-PING summary.log:
+PING Summary.log:
  This report contains the different configuration of the target stm test, the number of uvm report statements, the different number of sent and received bridge to bridge types, total functional coverage, functional coverage for each coveragroup and test condition.
  It contains the following information:
  1. Repacket Enable value.
