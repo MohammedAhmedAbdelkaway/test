@@ -10,7 +10,7 @@ Test Fail Condition:
  5. There is any uvm error. Where the uvm errors happen when:
       a. There is wrong expectation in local or remote loopback detection.
 
-Loopback summary.log:
+Loopback Summary.log:
  This report contains the different configuration of the target loopback test, the number of uvm report statements, cache timeout count, final caches contents, loopback detection errors,
  total functional coverage, functional coverage for each coveragroup and test condition.
  It contains the following information:
