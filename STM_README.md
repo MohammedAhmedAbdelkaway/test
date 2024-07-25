@@ -9,7 +9,7 @@ Test Fail Condition:
       a. There is unacceptable residence time mismatch between RTL and Golden residence time.
       b. There is received Followup STM message on RX AXI4 Stream or Avalon without previous received sync STM message at the interface.
 
-STM summary.log:
+STM Summary.log:
  This report contains the different configuration of the target stm test, the number of uvm report statements, total functional coverage, functional coverage for each coveragroup and test condition.
  It contains the following information:
  1. Target STM test name.
